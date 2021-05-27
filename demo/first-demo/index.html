@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图像处理</title>
+</head>
+<body>
+    <input type="file" accept="image/*" id="fileinput">
+
+    <label for="red">Red</label>
+    <input type="range" min="-255" max="255" value="0" id="red">
+
+    <label for="red">Blue</label>
+    <input type="range" min="-255" max="255" value="0" id="blue">
+
+    <label for="red">Green</label>
+    <input type="range" min="-255" max="255" value="0" id="green">
+
+    <label for="brightness">Brightness</label>
+    <input type="range" min="-255" max="255" value="0" id="brightness">
+
+    <label for="contrast">Constrast</label>
+    <input type="range" min="-255" max="255" value="0" id="contrast">
+
+    <label for="grayscale">Grayscale</label>
+    <input type="checkbox" id="grayscale">
+
+   <div>
+       <canvas id="canvas" width="0" height="0"></canvas>
+   </div>
+
+   <script src="main.js"></script>
+</body>
+</html>

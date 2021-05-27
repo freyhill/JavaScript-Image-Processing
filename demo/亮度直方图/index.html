@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图像处理</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+       
+        .wrapper {
+            display: flex;
+            padding: 50px;
+        }
+        #histogram{
+            margin: 20px;
+        }
+        #histogram ul{ 
+            width: 512px;
+            border:1px solid red;
+            display: flex;
+            height: 300px;
+            align-items: flex-end;
+        }
+        #histogram ul li{
+           
+            width: 2px;
+            background: #000;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+   <div class="wrapper">
+       <canvas id="canvas" width="0" height="0"></canvas>
+       <canvas id="put-canvas" width="0" height="0"></canvas>
+   </div>
+   <div id="histogram"></div>
+   <script src="main.js"></script>
+</body>
+</html>
